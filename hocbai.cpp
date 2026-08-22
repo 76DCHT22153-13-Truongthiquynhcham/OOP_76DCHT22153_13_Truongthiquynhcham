@@ -22,9 +22,9 @@ int main() {
     int n;
     cout << "Nhap so luong nhan vien: ";
     cin >> n;
-    cin.ignore(); // bỏ ký tự '\n' sau khi nhập số
+    cin.ignore(); 
 
-    // ===== VECTOR =====
+    // VECTOR
     cout << "\n CACH 1: VECTOR\n";
     vector<nv> ds(n);
     for (int i = 0; i < n; i++) {
@@ -34,7 +34,7 @@ int main() {
         ds[i].inra();
     }
 
-    // ===== MẢNG ĐỘNG =====
+    //  MẢNG ĐỘNG 
     cout << "\n CACH 2: MANG DONG\n";
     nv *dsnv2 = new nv[n];
     for (int i = 0; i < n; i++) {
