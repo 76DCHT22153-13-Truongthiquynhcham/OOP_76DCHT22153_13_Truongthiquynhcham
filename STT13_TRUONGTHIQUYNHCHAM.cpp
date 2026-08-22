@@ -1,41 +1,57 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
+#include<vector>
 using namespace std;
-class NhanVien
-{
-private:
-    string manv;
-    string hoten;
-    string ngaysinh;
-    string diachi;
-public:
-    void nhap(){
-    
-        cout << "Nhap ma nhan vien: ";
-        getline(cin, manv);
-        cout << "Nhap ho ten: ";
-        getline(cin, hoten);
-        cout << "Nhap ngay sinh: ";
-        getline(cin, ngaysinh);
-        cout << "Nhap dia chi: ";
-        getline(cin, diachi);
-    }
-    void xuat()
-    {
-        cout << "\n--- Thong tin nhan vien ---\n";
-        cout << "Ma nhan vien: " << manv << endl;
-        cout << "Ho ten: " << hoten << endl;
-        cout << "Ngay sinh: " << ngaysinh << endl;
-        cout << "Dia chi: " << diachi << endl;
-    }
+class nhanvien {
+	private:
+		string manv;
+		string hovaten;
+		string diachi;
+		double luong ;
+		double  heso;
+	public:
+	void nhap(){
+		
+		getline(cin,hovaten);
+		
+    cin.ignore();
+	}	
+	void inra(){
+	
+		cout<<"hovaten:"<<hovaten<<"\n";
+		
+	}
+  typedef nhanvien nv;
+		
 };
+int main(){
+	nhanvien nv;
+ vector<int>a(n);
+ cout<<"nhap so luong nhan vien:";
+ cin>>n;
+ cin.ignore();
+ //vector
 
-int main()
-{
-    NhanVien Minh;
-
-    Minh.nhap();
-    Minh.xuat();
-
-    return 0;
+ vector<nv>ds(n);
+ for(int i=0;i<n;i++){
+   ds[i].nhap();
+ }
+ //mảng động
+ nhanvien *dsnv2 = new nhanvien[n];
+    cin.ignore();
+    for (int i = 0; i < n; i++) {
+        dsnv2[i].nhap();
+    }
+    for (int i = 0; i < n; i++) {
+        dsnv2[i].inra();
+    }
+    delete[] dsnv2;
+ //mảng tĩnh
+ nhanvien dsnv3[n];
+    for (int i = 0; i < n; i++) {
+        dsnv3[i].nhap();
+    }
+    for (int i = 0; i < n; i++) {
+        dsnv3[i].inra();
+    }
 }
