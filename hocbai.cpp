@@ -43,8 +43,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         dsnv2[i].inra();
     }
-    delete[] dsnv2;
-
+    delete[]  dsnv2;
+ 
     // ===== MẢNG TĨNH =====
     cout << "\nCACH 3: MANG TINH \n";
     nv dsnv3[100]; 
