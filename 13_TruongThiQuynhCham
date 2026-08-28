@@ -47,3 +47,25 @@ matran tong(matran a, matran b){
 	}
 	return res;
 }
+int main(){
+	matran a, b, c;
+	
+	cout << "Nhap ma tran a\n";
+	a.nhap();
+	
+	cout << "Nhap ma tran b\n";
+	b.nhap();
+	
+	c = tong(a,b);
+	
+	cout <<"Ma tran a ban dau:\n";
+	a.xuat();
+	
+	cout <<"Ma tran b ban dau:\n";
+	b.xuat();
+	
+	cout <<"Ma tran c ban dau:\n";
+	c.xuat();
+	
+	return 0;
+}
